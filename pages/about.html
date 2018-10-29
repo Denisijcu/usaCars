@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cars Example</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animation.css">
+
+  <style>
+    * {
+      margin: 0vw;
+      padding: 0vw;
+    }
+
+    header {
+      background-color: black;
+      color: white;
+      height: 60px;
+    }
+
+    .about {
+
+      transform: rotateZ(90deg);
+
+      color: green;
+      height: 10vw;
+      display: inline-block;
+      font-size: 40px;
+      margin-left: 0vw;
+      margin-top: 2.7vw;
+    }
+
+    #me {
+      color: red;
+    }
+
+    .me {
+      color: black;
+      background-image: url('../img/camarufront.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 30vw;
+      opacity: 0.6;
+      margin: 25px;
+      padding: 25px;
+    }
+
+    .container {
+      background-color: transparent;
+      color: black;
+      z-index: 1;
+      top: 15%;
+      left: 15%;
+      height: 600px;
+      width: 720px;
+      position: absolute;
+    }
+
+    nav {
+      background-color: transparent;
+      color: black;
+    }
+
+    ul {
+      position: absolute;
+      top: 35px;
+      left: 80%;
+    }
+
+    li {
+      text-decoration: none;
+      display: inline;
+      margin-left: 10px;
+      color: black;
+    }
+
+    a:hover {
+      /* background-color: rgb(151, 43, 43);*/
+      color: white;
+      padding: 8px;
+      /*  border-radius: 8px;*/
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    img {
+      opacity: 0.2;
+      border-radius: 50%;
+      width: 25%;
+      height: 25%;
+      position: absolute;
+      left: 100%;
+      top: 55%;
+    }
+
+    #mypic {
+      margin: 0;
+      left: 30vw;
+      top: 10%;
+      height: 10vw;
+      width: 10vw;
+      opacity: 1;
+      display: none;
+
+
+    }
+
+    .test {
+      height: 20px;
+      width: 100px;
+      cursor: pointer;
+      color: blue;
+    }
+
+    .read {
+      display: none;
+      width: 400px;
+      float: left;
+      scroll-behavior: auto;
+      text-align: justify;
+      background-color: black;
+      color: white;
+      font-family: monospace;
+      padding: 5px;
+    }
+
+    .test:hover {
+      width: 400px;
+    }
+
+    .lnkgallery:hover {
+      background-color: transparent;
+      color: white;
+    }
+
+    .icons>a:hover {
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body id="home">
+  <header>
+    <h1 class="animated bounce">American <span class="c animated infinite bounceInRight">C</span><span class="a animated infinite bounceInLeft">A</span><span
+        class="r animated infinite bounceInUp">R</span><span class="s animated infinite fadeIn">S</span>
+    </h1>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+
+
+
+  <h2 class="about animated infinite fadeIn">ABOUT <span id="me">ME</span></h2>
+  <p></p>
+
+  <section class="me">
+  </section>
+  <div class="container">
+    <h2 style="font-size: 2vw">
+      Denis
+
+      <span class="text-secondary">Sanchez</span>
+
+    </h2>
+
+
+
+    <h3 style="font-style: italic">
+
+      Web Developer, Programmer & Designer Student
+
+    </h3>
+
+    <br>
+
+    <div class="icons" style="color:black; background-color: white;">
+      FOLLOW me ...
+      <a href="https://twitter.com/" style="color: black;">
+
+        <i class="fab fa-twitter fa-2x"></i>
+
+      </a>
+
+      <a href="https://www.facebook.com/denis.sanchez.3914?ref=bookmarks" style="color: black">
+
+        <i class="fab fa-facebook fa-2x"></i>
+
+      </a>
+
+      <a href="https://business.linkedin.com/" style="color: black">
+
+        <i class="fab fa-linkedin fa-2x"></i>
+
+      </a>
+
+      <a href="https://github.com/Denisijcu" style="color: black">
+
+        <i class="fab fa-github fa-2x"></i>
+
+      </a>
+
+    </div>
+
+
+
+    <!--<img src="../img/me.png" alt="me">-->
+
+
+    <a href="../index.html?#lnkgallery" class="lnkgallery"><img src="" alt="me" id='mypic' class="test">
+    </a>
+
+
+
+    <div class="test" onclick="{r=document.querySelector('.read').style.display='inline-block';}">Read More </div>
+    <div class="read">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos esse distinctio aperiam et quidem
+      doloribus, numquam accusantium aut recusandae laboriosam molestiae iste dolor laborum ipsum beatae quibusdam
+      ratione, alias voluptas culpa necessitatibus eveniet. Id quisquam minima obcaecati? Adipisci sit magni deserunt
+      animi, illo optio hic. Esse voluptatibus eum itaque suscipit?
+      </b>
+      <button onclick="{r=document.querySelector('.read').style.display='none';}">Close</button>
+    </div>
+
+  </div>
+  <!-- Footer -->
+  <br>
+  <footer>
+    <div class="menu-footer">
+      <br>
+      <li>
+        <a href="../index.html">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </div>
+    <br>
+    <p style="text-align: center">Demo Flex & Grid (TechLaunch - Course) &copy; 2018</p>
+  </footer>
+  <script src="../data/carsdb.js"></script>
+  <script src=""></script>
+
+  <script>
+    me = document.querySelector('#mypic');
+    pictures = [];
+    j = 0;
+    i = 0;
+    c = 0;
+    cars.forEach(ele => {
+      pictures.push(ele.pict);
+      j++;
+    });
+
+
+    console.log('que pasa');
+    var updateMe = setInterval(FnUpdateMe, 2000);
+
+
+    function FnUpdateMe() {
+
+      if (i == j) {
+        i = 0;
+      }
+      if (i < j) {
+        me.style.display = 'inline-block';
+        me.src = pictures[i];
+        console.log(pictures[i]);
+      }
+
+      i++;
+      c = i;
+      console.log(i);
+      if (c > 20) {
+        clearInterval(updateMe);
+        me.style.display = 'none';
+      }
+    }
+  </script>
+
+</body>
+
+</html>
